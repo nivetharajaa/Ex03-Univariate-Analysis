@@ -35,3 +35,49 @@ Count the values from the data.
 Do plots like boxplots,countplot,distribution plot,histogram plot.
 
 ##Program
+##For SuperStore.csv:
+
+Developed by : Nivetha A
+Registration Number : 212222230101
+
+import pandas as pd
+import numpy as np
+import seaborn as sns
+df=pd.read_csv("SuperStore.csv")
+df
+df.head()
+df.info()
+df.describe()
+df.isnull().sum()
+df.dtypes
+df['Sales'].value_counts()
+sns.boxplot(x="Sales", data=df)
+sns.countplot(x="Sales", data=df)
+sns.distplot(df["Sales"])
+sns.histplot(x="Sales", data=df)
+
+##For diabetes.csv
+
+Developed by : Nivetha A
+Registration Number : 212222230101
+
+import pandas as pd
+import numpy as np
+import seaborn as sns
+df=pd.read_csv("diabetes.csv.csv")
+df
+df.head()
+df.info()
+df.describe()
+df.isnull().sum()
+df.dtypes
+df['Age'].value_counts()
+sns.boxplot(x="Age", data=df)
+sns.countplot(x="Age", data=df)
+sns.distplot(df["Age"])
+sns.histplot(x="Age", data=df)
+
+##OUTPUT
+
+##FOR SuperStore.csv:
+##DATA
